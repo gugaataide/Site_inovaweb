@@ -49,6 +49,7 @@ header .navegacao-primaria li a {
     width: 0px;
     height: 0px;
     font-size: 1.3rem;
+    font-family: "Quicksand", regular;
 }
 
 header .navegacao-primaria li a::after {
@@ -71,7 +72,7 @@ header .navegacao-primaria li a:hover::after {
 
 .section-div {
     animation: inicializar .7s forwards;
-    background-color: #8C12FF;
+    background-color: #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
@@ -113,11 +114,15 @@ header .navegacao-primaria li a:hover::after {
     max-width: 100%;
 }
 
+.digitando::before{
+    color: #8C12FF;
+}
 .digitando::after {
     content: '|';
     margin-left: 5px;
     opacity: 1;
     animation: pisca .5s infinite;
+    color:#8C12FF;
 }
 
 @keyframes pisca {
@@ -149,13 +154,14 @@ header .navegacao-primaria li a:hover::after {
 /* SEÇÃO PRINCIPAL SOBRE MIM */
 
 
+
 main {
     background-color: #8C12FF;
     color: white;
 }
 
 .titulo_header{
-    font: 'Quicksand';
+    font-family: 'Quicksand',regular;
 }
 main .sobre {
     margin-top: 60px;
@@ -164,10 +170,9 @@ main .sobre {
     gap: 30px;
     justify-content: center;
     padding: 40px;
+    border-radius: 10%;
 }
-.digitando{
-    font-family: "Quicksand";
-}
+
 
 .sobre_titulo {
     margin: 30px 0;
@@ -179,7 +184,7 @@ main .sobre {
 
 .sobre_titulo h1 {
     font-size: 2.5rem;
-    color: #8C12FF;
+    color: #fff;
     margin-bottom: 15px;
     font-family: "Quicksand", regular;
 }
@@ -202,7 +207,7 @@ main .sobre {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #8C12FF;
+    background-color: #fff;
 }
 
 .sobre img {
@@ -237,6 +242,7 @@ main .sobre {
     font-size: 2.3rem;
     color: #fff;
     grid-column: 1/-1;
+    font-family: "Quicksand", regular;
 }
 
 .sobre_texto h1::after {
@@ -250,9 +256,10 @@ main .sobre {
 }
 
 .sobre_texto p {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     grid-row: 2;
     grid-column: 1/-1;
+    font-family: "Quicksand", regular;
 }
 
 .sobre_info {
@@ -265,7 +272,7 @@ main .sobre {
 }
 
 .sobre_info i {
-    color: #8C12FF;
+    color: #fff;
     display: inline-block;
     padding-right: 15px;
     font-size: 1.5rem;
@@ -360,6 +367,7 @@ main .sobre {
     margin-top: -30px;
     padding: 60px;
     background-color: #151515;
+    border-radius: 1%;
 }
 
 
@@ -396,15 +404,16 @@ main .sobre {
 }
 
 .my_services ul li h3 {
-    color: #fff;
+    color: #8C12FF;
     font-size: 1.6rem;
-    font-family: 'poppins';
+    font-family: 'Quicksand', bold;
     font-weight: 500;
 }
 
 .my_services ul li p {
-    color: #000000;
-    font-size: 1.1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "Quicksand", regular;
 }
 
 .my_services li::before {
@@ -486,6 +495,7 @@ main .sobre {
     margin-bottom: 30px;
     grid-column: 2;
     grid-row: 1;
+
 }
 
 .experience_content ul {
@@ -503,6 +513,7 @@ main .sobre {
     display: none;
     background-color: #222;
     padding: 40px;
+
 }
 
 
@@ -774,6 +785,7 @@ main .sobre {
     gap: 30px;
     justify-content: center;
     background-color: #151515;
+    border-radius: 1%;
 }
 
 .projects ul {
