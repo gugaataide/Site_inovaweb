@@ -1,4 +1,11 @@
-
+$('nav a').click(function(e){
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+$('html, body').animate({
+    scrollTop: targetOffset
+    },500)
+});    
 
 function ativaLetra(elemento){
     const arrTexto = elemento.innerHTML.split('');
@@ -11,7 +18,7 @@ function ativaLetra(elemento){
 }
 
 const titulo = document.querySelector('.digitando');
-ativaLetra(titulo); 
+ativaLetra(titulo);
 
 function ativacaoMenu(){
     const ativaMenu = document.querySelector('.fa-bars');

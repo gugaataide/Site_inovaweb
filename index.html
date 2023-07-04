@@ -19,9 +19,9 @@
             <ul aria-label="Navegação primária" class="navegacao-primaria">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#my_services">Serviços</a></li>
-                <li><a href="#portfolio">Equipe</a></li>
-                <li><a href="#pricing">Portfolio</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li onclick="redirecionar()"><a href="#contact">Contatos</a></li>
                 <script>
                     function redirecionar() {
@@ -33,7 +33,7 @@
         </nav>
 
     </header>
-    <section aria-label="seção curriculo dowload Leonardo" class="section-div">
+    <section aria-label="seção curriculo dowload Leonardo" class="section-div" id="home">
         <div>
             <h2>Olá cliente</h2>
             <h2 id="home" class="digitando">InovaWeb soluções digitais</h2>
@@ -44,7 +44,7 @@
     </section>
 
     <main>
-        <article aria-label="seção sobre mim" class="sobre">
+        <article aria-label="seção sobre mim" class="sobre" id="sobre">
             <div class="sobre_titulo">
                 <h1 id="sobre" >SOBRE NÓS</h1>
                 
@@ -80,7 +80,7 @@
             </div>
         </article>
     </main>
-    <section class="services">
+    <section class="services" id="services">
         <div class="sobre_titulo">
             <h1 id="my_services">SERVIÇOS</h1>
             <p></p>
@@ -126,7 +126,7 @@
     </section>
     <section class="my_resume">
         <div class="sobre_titulo">
-            <h1 id="portfolio">Equipe</h1>
+            <h1 id="equipe">Equipe</h1>
             <p></p>
             <div aria-label="Seção apenas de ilustrações de botões">
                 <span></span>
@@ -270,9 +270,9 @@
             </div>
         </div>-->
     </section>
-    <section class="projects">
+    <section class="projects" id="projects"> 
         <div class="sobre_titulo">
-            <h1 id="pricing">NOSSOS PROJETOS</h1>
+            <h1 id="portfolio">PORTFOLIO</h1>
             <p></p>
             <div aria-label="Seção apenas de ilustrações de botões">
                 <span></span>
@@ -290,15 +290,10 @@
         </div>
         <div class="projects_armazenamento">
             <ul aria-label="Navegação de projetos e websites">
-                <li id="design"><img src="imgs/ecommerce.jpeg" alt="Site criado para ser um ecommerce geral"></li>
-                <li id="design"><img src="imgs/facebook.jpeg" alt="Clone da tela de login do facebook"></li>
-                <li id="graphic"><img src="imgs/instagram.jpeg" alt="Clone da tela de login do instagram"></li>
-                <li id="graphic"><img src="imgs/iphone.jpeg" alt="Landing page da Apple"></li>
-                <li id="website"><img src="imgs/projetoms.png" alt="Tela de cadastro de League of legends">
-                </li>
-                <li id="website"><img src="imgs/marioword.jpeg" alt="Landing Page do filme Mario Word"></li>
+                <li id="website"><img src="imgs/projetoms.png" alt="Tela de cadastro de League of legends"></li>
+                <li id="website"><img src="imgs/guga.png" alt="Landing Page do filme Mario Word"></li>
                 <li id="website"><img src="imgs/sonic.jpeg" alt="Clone da Netflix"></li>
-                <li id="website"><img src="imgs/sonic.jpeg" alt="Landing Page do filme Sonic"></li>
+                
             </ul>
         </div>
         <a href="#">Load More Portfólio</a>
@@ -311,16 +306,18 @@
         </div>
         <nav aria-label="navegação de links sociais">
             <ul class="footer_sociais">
-                <li><i class="fa-brands fa-facebook-f"><a href="#"></a></i></li>
-                <li><i class="fa-brands fa-twitter"><a href="#"></a></i><a href="#"></a></li>
+                <li><i class="fa-brands fa-facebook-f"><a href="https://www.instagram.com/inova_web45/"></a></i></li>
+                <li><i class="fa-brands fa-twitter"><a href="https://www.instagram.com/inova_web45/"></a></i><a href="#"></a></li>
                 <li><i class="fa-brands fa-linkedin-in"></i></li>
-                <li><i class="fa-brands fa-instagram"><a href="#https://instagram.com/inova_web45?igshid=MzRlODBiNWFlZA=="></a></i></li>
-                <li><i class="fa-brands fa-github-alt"><a href="#"></a></i></li>
+                <li><i class="fa-brands fa-instagram"><a href="https://www.instagram.com/inova_web45/"></a></i></li>
+                <li><i class="fa-brands fa-github-alt"><a href="https://www.instagram.com/inova_web45/"></a></i></li>
             </ul>
         </nav>
         <p class="footer_comercial"></p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
